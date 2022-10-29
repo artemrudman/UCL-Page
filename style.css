@@ -2,7 +2,19 @@ html {
     font-family: 'Playfair Display', serif;
     margin: 0;
     font-size: 16px;
-    background:rgba(0, 0, 0, 0.8);
+    background: aliceblue
+}
+
+li {
+    list-style-type: none; 
+   }
+
+ul {
+    padding-left: 0;
+   }
+
+body {
+    margin: 0px;
 }
 
 a {
@@ -11,10 +23,12 @@ a {
 
 header {
     color: aliceblue;
-    padding:20px;
-    margin: 0px 0px 30px 0px ;
+    padding: 20px;
+    margin: 0px 0px 10px 0px ;
     background: linear-gradient(155deg, rgba(252,0,255,1) -5%, rgb(5, 5, 82) 25%, rgb(5, 5, 82) 75%, rgba(0,18,255,1) 110%);
     background-repeat: no-repeat;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 
@@ -113,7 +127,6 @@ header {
 
 #main-news-image {
     height: 200px;
-    object-fit: inherit;
 }
 
 
@@ -122,9 +135,72 @@ header {
 
 
 
+/*==========NEW TEAM WINNER PART===========*/
+
+
+#this-year-team {
+    height: 200px;
+    margin: 30px 85px;
+    display: flex;
+    background-color: aliceblue;
+    color: black;
+}
+
+.new-win-team img {
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+}
+
+.new-win-team {
+    margin: 0px 0px;
+    color: black;
+    background-color: aliceblue;
+    padding:0px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5)
+}
+
+#first-team-text {
+    padding: 15px;
+    color: black;
+}
+
+/* #new-win-teams {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 40px;
+} */
+
+
 /*==========BOTTOM PART===========*/
 
-#title-year {
+
+
+.win-team img {
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+}
+
+
+.win-team {
+    margin: 0px 20px;
+    background-color: aliceblue;
+    padding:0px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5)
+}
+
+#win-teams {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+
+
+/* #title-year {
     font-size: 32px;
 }
 
@@ -140,7 +216,7 @@ header {
 
 #teams img {
     height: 250px;
-}
+} */
     
     
     /* #menu {

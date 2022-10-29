@@ -3,7 +3,10 @@ html {
     margin: 0;
     font-size: 16px;
     background:rgba(0, 0, 0, 0.8);
+}
 
+a {
+    text-decoration: none;
 }
 
 header {
@@ -13,6 +16,7 @@ header {
     background: linear-gradient(155deg, rgba(252,0,255,1) -5%, rgb(5, 5, 82) 25%, rgb(5, 5, 82) 75%, rgba(0,18,255,1) 110%);
     background-repeat: no-repeat;
 }
+
 
 #navhead {
     background:rgba(39, 39, 39, 0.6);
@@ -26,33 +30,26 @@ header {
     border-radius: 8px;
 }
 
-#mainhead {
-    display: flex;
-}
-
-#main-head-text {
-    margin: 20px;
-    vertical-align: auto;
-}
-
 #logotext {
     text-align: center;
-    font-size: 38px;
+    font-size: 42px;
     font-style: bold;
     font-weight: 900;
     color: aliceblue;
 }
 
+
 #menu {
     list-style: none;
     display: flex;
+    font-style: bold;
     margin: 0px;
     padding: 0px;
-    font-style: bold;
 }
 
 #menu li{
-    margin: 0px 15px;
+    margin: 0px;
+    padding: 0px 20px;
 }
 
 #menu a{
@@ -60,25 +57,84 @@ header {
     font-size: 20px;
 }
 
-
-a {
-    text-decoration: none;
+#menu a:hover {
+    color: aliceblue;
+    font-size: 20px;
+    color: rgba(253, 110, 255, 0.699);
 }
+
+
+
+
+#mainhead {
+    display: flex;
+}
+
 
 #logomain {
-    margin: 30px 70px;
+    margin: 30px 50px;
     height: 200px;
 }
+
+
+
+
+
+
+#main-news {
+    display: flex;
+}
+
+#main-news {
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    margin: 20px 90px;
+    padding: 0px;
+    font-size: 16px;
+    border-radius: 5px;
+    color: black;
+}
+
+#main-news-title {
+    margin: 20px;
+    font-size: 28px;
+    color: black;
+
+}
+
+#main-news-text {
+    background-color: rgb(255, 255, 255);
+    margin: 20px;
+    font-size: 16px;
+    color: black;
+    object-fit: inherit;
+    text-overflow: ellipsis;
+}
+
+#main-news-image {
+    height: 200px;
+    object-fit: inherit;
+}
+
+
+
+
+
+
+
+/*==========BOTTOM PART===========*/
 
 #title-year {
     font-size: 32px;
 }
 
-
+#teams {
+    display: flex;
+}
 
 .team {
     background-color: rgb(255, 255, 255);
-    margin: 30px;
+    margin: 10px;
     font-size: 18px;
 }
 

@@ -1,50 +1,109 @@
 html {
     font-family: 'Playfair Display', serif;
-    font-size: 22px;
-    background:rgba(0, 0, 0, 0.7);
+    margin: 0;
+    font-size: 16px;
+    background:rgba(0, 0, 0, 0.8);
 
 }
 
 header {
     color: aliceblue;
-    padding:10px;
+    padding:20px;
     margin: 0px 0px 30px 0px ;
     background: linear-gradient(155deg, rgba(252,0,255,1) -5%, rgb(5, 5, 82) 25%, rgb(5, 5, 82) 75%, rgba(0,18,255,1) 110%);
     background-repeat: no-repeat;
 }
 
-#navsechead {
+#navhead {
     background:rgba(39, 39, 39, 0.6);
+    color: aliceblue;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+    text-transform: uppercase;
+    border-radius: 8px;
 }
 
-#mainsechead {
-
+#mainhead {
+    display: flex;
 }
 
-a:hover {
+#main-head-text {
+    margin: 20px;
+    vertical-align: auto;
+}
+
+#logotext {
+    text-align: center;
+    font-size: 38px;
+    font-style: bold;
+    font-weight: 900;
+    color: aliceblue;
+}
+
+#menu {
+    list-style: none;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    font-style: bold;
+}
+
+#menu li{
+    margin: 0px 15px;
+}
+
+#menu a{
+    color: aliceblue;
+    font-size: 20px;
+}
+
+
+a {
     text-decoration: none;
 }
 
 #logomain {
-    margin: 20px;
+    margin: 30px 70px;
     height: 200px;
 }
 
+#title-year {
+    font-size: 32px;
+}
 
-/* #logo {
-    margin: 10px;
-    height: 380px;
-    width: 380px;
-    object-fit: none;
-
-} */
 
 
 .team {
     background-color: rgb(255, 255, 255);
     margin: 30px;
+    font-size: 18px;
 }
 
 #teams img {
     height: 250px;
 }
+    
+    
+    /* #menu {
+        display: inline;
+    } */
+    
+    /* #logo {
+        margin: 10px;
+        height: 380px;
+        width: 380px;
+        object-fit: none;
+    
+    } */
+
+
+    /* #logo {
+        width: 100px;
+        height: 45px;
+        object-fit: cover;
+        object-position: top;
+    
+    } */

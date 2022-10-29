@@ -1,0 +1,50 @@
+html {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    background:rgba(0, 0, 0, 0.7);
+
+}
+
+header {
+    color: aliceblue;
+    padding:10px;
+    margin: 0px 0px 30px 0px ;
+    background: linear-gradient(155deg, rgba(252,0,255,1) -5%, rgb(5, 5, 82) 25%, rgb(5, 5, 82) 75%, rgba(0,18,255,1) 110%);
+    background-repeat: no-repeat;
+}
+
+#navsechead {
+    background:rgba(39, 39, 39, 0.6);
+}
+
+#mainsechead {
+
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+#logomain {
+    margin: 20px;
+    height: 200px;
+}
+
+
+/* #logo {
+    margin: 10px;
+    height: 380px;
+    width: 380px;
+    object-fit: none;
+
+} */
+
+
+.team {
+    background-color: rgb(255, 255, 255);
+    margin: 30px;
+}
+
+#teams img {
+    height: 250px;
+}

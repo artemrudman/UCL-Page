@@ -138,14 +138,6 @@ header {
 /*==========NEW TEAM WINNER PART===========*/
 
 
-#this-year-team {
-    height: 200px;
-    margin: 30px 85px;
-    display: flex;
-    background-color: aliceblue;
-    color: black;
-}
-
 .new-win-team img {
     height: 200px;
     width: 300px;

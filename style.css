@@ -102,23 +102,23 @@ header {
     list-style: none;
     display: flex;
     font-style: bold;
-    margin: 0px;
-    padding: 0px;
+    margin: 0%;
+    padding: 0%;
 }
 
 #menu li{
-    margin: 0px;
-    padding: 0px 40px;
+    margin: 0%;
+    padding: 0% 3rem;
 }
 
 #menu a{
     color: aliceblue;
-    font-size: 20px;
+    font-size: 1.2rem;
 }
 
 #menu a:hover {
     color: aliceblue;
-    font-size: 20px;
+    font-size: 1.2rem;
     color: rgba(253, 110, 255, 0.699);
 }
 
@@ -129,54 +129,42 @@ header {
 
 
 #logomain {
-    margin: 30px 50px;
+    margin: 2.5% 3.5%;
     height: 200px;
 }
 
 #this-year-team {
-    height: 200px;
-    margin: 30px 85px;
+    height: 100%;
+    max-height: 200px;
+    margin: 3% 1% 1% 1%;
     display: flex;
     background-color: aliceblue;
     color: black;
     box-shadow: 0 0 10px rgba(0,0,0,0.5)
 }
 
-#first-team-text {
-    padding: 15px;
-    color: black;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*========== WINNERS PART===========*/
-
-#winners {
-    grid-area: winners;
-    background-color: blueviolet;
-}
-
-#tablewinners {
-    grid-area: tablewinners;
-    background-color: rgb(229, 255, 0);
-}
-
 .new-win-team img {
     height: 200px;
     width: 300px;
     object-fit: cover;
+}
+
+#first-team-text {
+    padding: 15px;
+    color: black;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+#first-team-bigtext {
+    color: black;
+    object-fit: cover;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+
 }
 
 .new-win-team {
@@ -187,47 +175,67 @@ header {
     box-shadow: 0 0 10px rgba(0,0,0,0.5)
 }
 
+
+
+
+/*========== WINNERS PART===========*/
+
+#winners {
+    grid-area: winners;
+    /* background-color: blueviolet; */
+}
+
+#tablewinners {
+    grid-area: tablewinners;
+    /* background-color: rgb(229, 255, 0); */
+}
+
+
 .win-team img {
-    height: 200px;
+    height: 50%;
     width: 100%;
     object-fit: cover;
 }
 
-/* .win-team img:hover {
+.win-team img:hover {
     zoom: 1.05;
-} */
+}
 
 
 .win-team {
-    margin: 0px 0px;
+    margin: 0% 0%;
     background-color: aliceblue;
-    padding:0px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5)
+    padding:0%;
+    box-shadow: 0 0 7px rgba(0,0,0,0.5)
 }
 
 #win-teams {
     display: grid;
-    grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 300px;
-    gap: 30px 30px;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: 25% 25% 25% 25%;
+    gap: 2% 2%;
     width: 90%;
-    margin: auto;
-    margin-bottom: 40px;
+    margin-left: 10%;
+    margin-top: 2%;
+    margin-bottom: 7%;
 }
 
-#win-teams li:nth-of-type(4) {
+/* #win-teams li:nth-of-type(4) {
     background-color: aqua;
-}
+} */
 
+
+/*==========TABLE WIN===========*/
 
 #tablewin {
+
     display: grid;
-    grid-template-columns: 300px;
-    grid-template-rows: 300px;
-    gap: 30px 30px;
+    grid-template-columns: 100%;
+    grid-template-rows: 300%;
     width: 90%;
-    margin: auto;
-    margin-bottom: 40px;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 7%;
 }
 
 

@@ -2,8 +2,8 @@
 
 html {
     font-family: 'Playfair Display', serif;
-    margin: 0px;
-    font-size: 16px;
+    margin: 0rem;
+    font-size: 1rem;
     background: aliceblue
 }
 
@@ -12,11 +12,11 @@ li {
    }
 
 ul {
-    padding-left: 0;
+    padding-left: 0rem;
    }
 
 body {
-    margin: 0px;
+    margin: 0rem;
 }
 
 a {
@@ -24,11 +24,36 @@ a {
 }
 
 
+.container {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 0.2fr 0.6fr 0.8fr 0.05fr;
+    grid-template-areas: 
+        "header header header header" 
+        "winners winners winners tablewinners"
+        "central-block central-block central-block central-block"
+        "second-block second-block second-block second-block"
+        "footer footer footer footer" ;
+    grid-gap: 0.2rem;
+}
 
-
-
-
-
+@media only screen and (max-width:650px){
+    .container {
+        display: grid;
+        height: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 0.2fr 0.6fr 0.6fr 0.8fr 0.05fr;
+        grid-template-areas: 
+            "header" 
+            "winners"
+            "tablewinners"
+            "central-block"
+            "second-block"
+            "footer" ;
+        grid-gap: 0.2rem;
+    }
+}
 
 
 
@@ -37,39 +62,39 @@ a {
 
 header {
     color: aliceblue;
-    padding: 20px;
-    margin: 0px 0px 10px 0px ;
+    padding: 2%;
+    margin: 0% 0% 1% 0% ;
     background: linear-gradient(155deg, rgba(252,0,255,1) -5%, rgb(5, 5, 82) 25%, rgb(5, 5, 82) 75%, rgba(0,18,255,1) 110%);
     background-repeat: no-repeat;
     width: 100%;
     box-sizing: border-box;
+    grid-area: header;
 }
-
 
 #navhead {
     background:rgba(39, 39, 39, 0.6);
     color: aliceblue;
-    height: 80px;
+    height: 20%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 40px;
+    padding: 0% 3%;
     text-transform: uppercase;
     border-radius: 8px;
 }
 
 #logotext {
     text-align: center;
-    width: 250px;
+    width: 100%;
     display: flex;
-    font-size: 42px;
+    font-size: 2.4rem;
     font-style: bold;
     font-weight: 900;
     color: aliceblue;
 }
 
 #byArtem {
-    font-size: 12px;
+    font-size: 0.8rem;
 }
 
 
@@ -138,6 +163,15 @@ header {
 
 /*========== WINNERS PART===========*/
 
+#winners {
+    grid-area: winners;
+    background-color: blueviolet;
+}
+
+#tablewinners {
+    grid-area: tablewinners;
+    background-color: rgb(229, 255, 0);
+}
 
 .new-win-team img {
     height: 200px;
@@ -173,7 +207,7 @@ header {
 
 #win-teams {
     display: grid;
-    grid-template-columns: 300px 300px 300px 400px;
+    grid-template-columns: 300px 300px 300px;
     grid-template-rows: 300px;
     gap: 30px 30px;
     width: 90%;
@@ -185,6 +219,22 @@ header {
     background-color: aqua;
 }
 
+
+#tablewin {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 300px;
+    gap: 30px 30px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+
+
+
+/*==========CENTRAL BLOCK===========*/
+
 #central-block {
     color: aliceblue;
     padding: 20px;
@@ -194,9 +244,18 @@ header {
     height: 400px;
     width: 100%;
     box-sizing: border-box;
+    grid-area: central-block;
 }
 
-
+#central {
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    grid-template-rows: 200px;
+    gap: 30px 50px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 40px;
+}
 
 
 
@@ -205,13 +264,28 @@ header {
 /*==========SECOND PART===========*/
 
 
+#second-block {
+    grid-area: second-block;
+    background-color: rgb(43, 255, 0);
+}
 
-
-
+#second {
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    grid-template-rows: 200px;
+    gap: 30px 50px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 40px;
+}
 
 
 
 /*==========Footer===========*/
+
+footer {
+    grid-area: footer;
+}
 
 #footer {
     margin: 0px;

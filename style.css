@@ -27,14 +27,14 @@ a {
 .container {
     display: grid;
     height: 100%;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.1fr 0.2fr 0.6fr 0.8fr 0.05fr;
+    grid-template-columns: 1fr 1fr 1fr 1.3fr;
+    grid-template-rows: 0.1fr 0.2fr 0.5fr;
     grid-template-areas: 
         "header header header header" 
         "winners winners winners tablewinners"
-        "central-block central-block central-block central-block"
-        "second-block second-block second-block second-block"
-        "footer footer footer footer" ;
+        "central-block central-block central-block central-block";
+        /* "second-block second-block second-block second-block"
+        "footer footer footer footer" ; */
     grid-gap: 0.2rem;
 }
 
@@ -197,8 +197,12 @@ header {
     object-fit: cover;
 }
 
+.win-team:hover {
+    color: rgba(0,0,0,0.6);
+}
+
 .win-team img:hover {
-    zoom: 1.05;
+    opacity: 85%;
 }
 
 
@@ -211,7 +215,7 @@ header {
 
 #win-teams {
     display: grid;
-    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-columns: 23% 23% 23% 23%;
     grid-template-rows: 25% 25% 25% 25%;
     gap: 2% 2%;
     width: 90%;
@@ -220,22 +224,54 @@ header {
     margin-bottom: 7%;
 }
 
-/* #win-teams li:nth-of-type(4) {
-    background-color: aqua;
-} */
+.year {
+    font-size: 1.2rem;
+    margin: 0%;
+    text-align: center;
+}
+
+.teams {
+    font-size: 1rem;
+    margin: 3%;
+    text-align: center;
+}
+
+
+.score {
+    font-size: 1.4rem;
+    margin: 0%;
+    text-align: center;
+}
 
 
 /*==========TABLE WIN===========*/
 
-#tablewin {
+#tablewinners {
 
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 300%;
     width: 90%;
     margin-right: 10%;
-    margin-top: 5%;
+    margin-top: 0%;
     margin-bottom: 7%;
+}
+
+#nametable {
+    margin: 5%;
+    font-size: 1.5rem;
+}
+
+#tablewins {
+    height: 80%;
+    width: 100%;
+    border: 0px;
+    border-color: black; 
+    margin-right: 20%;
+    margin-top: 0%;
+    margin-bottom: 7%;
+    box-shadow: 0 0 7px rgba(0,0,0,0.3)
+}
+
+.trtable{
+    box-shadow: 0 0 7px rgba(0,0,0,0.3) 
 }
 
 
@@ -245,11 +281,11 @@ header {
 
 #central-block {
     color: aliceblue;
-    padding: 20px;
-    margin: 0px 0px 10px 0px ;
+    padding: 1%;
+    margin: 0% 0% 1% 0% ;
     background: linear-gradient(155deg, rgba(252,0,255,1) -5%, rgb(5, 5, 82) 25%, rgb(5, 5, 82) 75%, rgba(0,18,255,1) 110%);
     background-repeat: no-repeat;
-    height: 400px;
+    height: 140%;
     width: 100%;
     box-sizing: border-box;
     grid-area: central-block;
@@ -257,23 +293,37 @@ header {
 
 #central {
     display: grid;
-    grid-template-columns: 250px 250px 250px 250px;
-    grid-template-rows: 200px;
-    gap: 30px 50px;
+    grid-template-columns: 23% 23% 23% 23%;
+    grid-template-rows: 80%;
+    gap: 2% 3%;
     width: 90%;
     margin: auto;
-    margin-bottom: 40px;
+    margin-bottom: 2%;
 }
 
+.central-block-video {
+    height: 100%;
+    width: 100%;
+}
 
+.central-block-video img {
+    height: 100%;
+    width: 100%;
+}
 
+.description-video {
+    font-size: 0.9rem;
+    margin: 2%;
+    text-align: left;
+}
 
 
 /*==========SECOND PART===========*/
 
 
-#second-block {
+/* #second-block {
     grid-area: second-block;
+    height: 200%;
     background-color: rgb(43, 255, 0);
 }
 
@@ -285,13 +335,21 @@ header {
     width: 90%;
     margin: auto;
     margin-bottom: 40px;
-}
+} */
 
 
 
 /*==========Footer===========*/
 
-footer {
+/* footer {
+    color: aliceblue;
+    padding: 2%;
+    margin: 0% 0% 1% 0% ;
+    background: linear-gradient(155deg, rgba(252,0,255,1) -5%, rgb(5, 5, 82) 25%, rgb(5, 5, 82) 75%, rgba(0,18,255,1) 110%);
+    background-repeat: no-repeat;
+    width: 100%;
+    box-sizing: border-box;
+    grid-area: header;
     grid-area: footer;
 }
 
@@ -306,6 +364,6 @@ footer {
 #footer-image img{
     width: 100%;
     height: 250px;
-    object-fit: cover;
-}
+
+} */
 
